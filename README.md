@@ -38,9 +38,18 @@ text-summarizer-llama/
 
 ## ⚙️ Setup Instructions
 
-### Step 1: Environment Setup
+## Step1: 📥 Clone the Repo
 
+To get started with the project, first clone the repository:
+
+```bash
+git clone https://github.com/Hardik-Sankhla/Text-Summarizer-Using-Llama-Ollama.git
+cd Text-Summarizer-Using-Llama-Ollama
 ```
+
+### Step 2: Environment Setup
+
+```bash
 $ python -m venv venv
 
 # On Windows
@@ -52,30 +61,30 @@ $ source venv/bin/activate
 
 #### Install dependencies:
 
-```
+```bash
 $ pip install -r requirements.txt
 ```
 
-### Step 2: Install & Run Ollama
+### Step 3: Install & Run Ollama
 
 Download Ollama and install it.
 
 #### Start Ollama and pull the LLaMA model:
 
-```
+```bash
 $ ollama pull llama2
 ```
 
 #### Run the App
 Start the backend using FastAPI:
 
-```
+```bash
 $ uvicorn backend.main:app --reload
 ```
 
 Start the frontend using Streamlit:
 
-```
+```bash
 $ streamlit run frontend/app.py
 ```
 
