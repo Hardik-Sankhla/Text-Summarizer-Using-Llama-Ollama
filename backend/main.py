@@ -6,7 +6,7 @@ def summarize(text: str = Form(...)):
  response = requests.post(
  "http://localhost:11434/api/generate",
  json={
- "model": "deepseek-r1:1.5b",
+ "model": "llama2",
  "prompt": f"Summarize this:\n\n{text}",
  "stream": False
  }
